@@ -1,0 +1,270 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Theme Name: Basic
+ * URL: http://blacktie.co
+ * Version: 1.0
+ */
+/*	################################################################
+	1. GENERAL STRUCTURES
+################################################################# */
+/* Import fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+* {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: #fff;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+p {
+    padding: 0;
+    margin-bottom: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #666;
+    margin-top: 10px;
+}
+
+html,
+body {
+    height: 90%;
+}
+
+#h a {
+    color: black;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+}
+
+.centered {
+    text-align: center
+}
+
+.mt {
+    margin-top: 50px;
+}
+
+.mb {
+    margin-bottom: 50px;
+}
+
+.mtb {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mtb2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    width: 100%;
+}
+
+::-moz-selection {
+    color: #fff;
+    text-shadow: none;
+    background: #2B2E31;
+}
+
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #2B2E31;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    -webkit-transition: background-color .4s linear, color .4s linear;
+    -moz-transition: background-color .4s linear, color .4s linear;
+    -o-transition: background-color .4s linear, color .4s linear;
+    -ms-transition: background-color .4s linear, color .4s linear;
+    transition: background-color .4s linear, color .4s linear;
+    color: #1abc9c;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #696E74;
+}
+
+.nopadding {
+    padding: 0px !important;
+    margin: 0px;
+}
+
+/* HEADER SECTION */
+#h {
+    padding-top: 50px;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 100px;
+    width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: black;
+}
+
+.logo h2 {
+    margin-left: 20px;
+    font-weight: 900;
+    color: black;
+    letter-spacing: 1px;
+}
+
+#h i {
+    font-size: 50px;
+}
+
+#h h1 {
+    font-size: 40px;
+}
+
+.row.mt {
+    margin-top: 100px;
+}
+
+.portfolio {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block;
+}
+
+.portfolio-item .title:before {
+    border-radius: 0;
+    display: none
+}
+
+.portfolio-item p {
+    margin: 0px 0 30px;
+}
+
+.portfolio-item h3 {
+    margin: -10px 0 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.tpl6 h3 {
+    color: #fff;
+    margin: 0;
+    padding: 40px 5px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.tpl6 .dmbutton {
+    display: inline-block;
+    margin: 30px 5px 20px 5px;
+    font-size: 13px;
+}
+
+.tpl6 .bg {
+    height: 100%;
+    width: 100%;
+    background-color: #00b3fe;
+    background-color: rgba(0, 179, 254, .9);
+    text-align: center;
+}
+
+a {
+    color: black
+}
+
+#h a {
+    color: #4582ec
+}
+
+#h b {
+    color:  #4582ec
+}
+
+.bg-light-gray h1 {
+    padding-bottom: 40px;
+    margin: 0;
+    font-size: 50px;
+
+}
+
+.bg-light-gray a {
+    color:  #4582ec
+
+
+}
+
+.img-responsive2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.row.mt h3 {
+    padding-bottom: 75px;
+    font-size: 1.5em;
+
+}
+
+
+
+.navbar-default {
+    background: white !important;
+    border-bottom-color: white !important;
+}
+
+.navbar-collapse.collapse a {
+    color: black !important;
+}

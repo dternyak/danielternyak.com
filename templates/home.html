@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block body %}
+    <div id=root>
+        <section data-reactroot="">{% include 'navbar.html' %}
+            <section>
+                <div id=h>
+                    <div class="centered container">
+                        <div class=row>
+                            <div class="col-md-8 col-md-offset-2">
+                                <h1>Hello, my name is <b>Daniel Ternyak</b>.<br>I
+                                    create web applications with<b> Python</b>and <b>JavaScript</b> on the <b>Cloud.</b>
+                                </h1>
+                            </div>
+
+                        </div>
+                        <div class="row mt">
+                            <div class=col-sm-4><i class=ion-monitor></i><a href=/portfolio><h3><b>Portfolio</b></h3>
+                            </a></div>
+                            <div class=col-sm-4><i class=ion-ios-bookmarks-outline></i><a href=/blog><h3><b>Blog</b>
+                            </h3></a></div>
+                            <div class=col-sm-4><i class=ion-ios-paper-outline></i><a
+                                    href="https://drive.google.com/file/d/0B3hYpsXRDCIkRUV4UTJlbXNMYTA/view?usp=sharing"
+                                    target=_blank><h3><b>Rèsumè</b></h3></a></div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+{% endblock %}

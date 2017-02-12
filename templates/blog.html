@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div id="root">
+        <section data-reactroot="">
+            {% include 'navbar.html' %}
+            <section>
+                <div>
+                    <div class="container">
+                        <div class="container centered"><h2><b>Blog Posts</b></h2></div>
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                                <div class="post-preview">
+                                    {% for item in posts %}
+                                        <div>
+                                            <a href="{{ item.fullLink }}"
+                                               target="_blank"><h2 class="post-title">{{ item.title }}</h2></a>
+                                            {% if item.subtitle %}
+                                            <p style="margin-top: -15px">{{ item.subtitle }}</p>
+                                            {% endif %}
+                                            <p class="post-meta">
+                                                Posted by
+                                                {{ item.author }}
+                                                on
+                                                {{ item.updatedAt }}
+                                            </p>
+                                            <hr>
+                                        </div>
+                                    {% endfor %}
+                                    {% if additional.additional %}
+                                        <h3 style="margin-bottom: 50px">View the rest at <a href="{{ additional.link }}"
+                                                                target="_blank">Medium.com</a>
+                                        </h3>
+                                    {% endif %}
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+{% endblock %}
