@@ -7,12 +7,22 @@ import json
 import datetime
 
 app = Flask(__name__, template_folder="templates")
+app.url_map.strict_slashes = False
+
 FlaskDeferredHandler.register(app)
 CORS(app)
 
 
+@app.before_request
+def clear_trailing():
+    from flask import redirect, request
+
+    rp = request.path
+    if rp != '/' and rp.endswith('/'):
+        return redirect(rp[:-1])
+
+
 @app.route('/blog', methods=['GET'])
-@app.route('/blog/', methods=['GET'])
 def blog():
     list_to_return = []
     author = 'dternyak'
@@ -71,7 +81,6 @@ def totally_home():
 
 
 @app.route('/portfolio', methods=['GET'])
-@app.route('/portfolio/', methods=['GET'])
 def portfolio():
     return render_template('portfolio.html')
 
