@@ -4,7 +4,7 @@
         <section data-reactroot="">{% include 'navbar.html' %}
             <section>
                 <div>
-                    <section class=bg-light-gray id=portfolio style=margin-bottom:100px>
+                    <section class="bg-light-gray" id="portfolio" style="margin-bottom:100px">
                         <div class="centered container"><h1><b>Portfolio</b></h1>
                             <hr>
                         </div>
@@ -12,13 +12,13 @@
                             <div>
                                 <div class="centered col-md-10 col-md-offset-1">
                                     <a href=http://monerowallet.com
-                                       target=_blank><h2><b>Monero
-                                        Wallet</b></h2>
+                                       target=_blank><h2>
+                                        <b>MoneroWallet</b></h2>
                                     </a>
                                     <div class=row-fluid>
                                         <div class="col-md-6 col-md-offset-3">
                                             <div class="pagination-centered img-responsive2">
-                                                <img src=/dist/monerowallet.png
+                                                <img src=/assets/monerowallet.png
                                                 ></div>
                                         </div>
                                     </div>
@@ -36,60 +36,62 @@
                                 </div>
                                 <hr>
                             </div>
-                            <div>
-                                <div class="centered col-md-10 col-md-offset-1"><a href=https://bitzipped.com
-                                                                                   target=_blank><h2><b>BitZipped</b>
+                            {#                            <div>#}
+                            {#                                <div class="centered col-md-10 col-md-offset-1">#}
+                            {#                                    <a href=https://bitzipped.com#}
+                            {#                                       target=_blank><h2><b>BitZipped</b>#}
+                            {#                                    </h2></a>#}
+                            {#                                    <div class="col-md-6 col-md-offset-3">#}
+                            {##}
+                            {#                                        <div class=row-fluid>#}
+                            {#                                            <div class="pagination-centered span12">#}
+                            {#                                                <img class=img-responsive2#}
+                            {#                                                     src=/assets/bitzipped.png#}
+                            {#                                                >#}
+                            {#                                            </div>#}
+                            {#                                        </div>#}
+                            {#                                    </div>#}
+                            {#                                </div>#}
+                            {#                                <div class=row>#}
+                            {#                                    <div class=col-sm-12>#}
+                            {#                                        <div class="centered col-md-10 col-md-offset-1"><p>BitZipped is a RESTfully#}
+                            {#                                            designed web application for selling digital content using Bitcoin. Users#}
+                            {#                                            can register and upload their content, customize the price, and set a banner#}
+                            {#                                            image they would like to display with their content. Customers can navigate#}
+                            {#                                            to a unique link for each product, and upon payment of the described price,#}
+                            {#                                            will receive a unique URL to access the content that expires after the#}
+                            {#                                            download.</div>#}
+                            {#                                    </div>#}
+                            {#                                </div>#}
+                            {#                                <hr>#}
+                            {#                            </div>#}
+                            {#                            <div>#}
+                            <div class="centered col-md-10 col-md-offset-1">
+                                <a href=http://cryptoindex.com
+                                   target=_blank><h2><b>CryptoIndex</b>
                                 </h2></a>
+                                <div class=row-fluid>
                                     <div class="col-md-6 col-md-offset-3">
 
-                                        <div class=row-fluid>
-                                            <div class="pagination-centered span12">
-                                                <img class=img-responsive2
-                                                     src=/dist/bitzipped.png
-                                                >
-                                            </div>
-                                        </div>
+                                        <div class="pagination-centered span12"><img class=img-responsive2
+                                                                                     src=/assets/cryptoindex.png
+                                        ></div>
                                     </div>
                                 </div>
-                                <div class=row>
-                                    <div class=col-sm-12>
-                                        <div class="centered col-md-10 col-md-offset-1"><p>BitZipped is a RESTfully
-                                            designed web application for selling digital content using Bitcoin. Users
-                                            can register and upload their content, customize the price, and set a banner
-                                            image they would like to display with their content. Customers can navigate
-                                            to a unique link for each product, and upon payment of the described price,
-                                            will receive a unique URL to access the content that expires after the
-                                            download.</div>
-                                    </div>
-                                </div>
-                                <hr>
                             </div>
-                            <div>
-                                <div class="centered col-md-10 col-md-offset-1"><a href=http://cryptoindex.com
-                                                                                   target=_blank><h2><b>CryptoIndex</b>
-                                </h2></a>
-                                    <div class=row-fluid>
-                                        <div class="col-md-6 col-md-offset-3">
-
-                                            <div class="pagination-centered span12"><img class=img-responsive2
-                                                                                         src=/dist/cryptoindex.png
-                                            ></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=row>
-                                    <div class=col-sm-12>
-                                        <div class="centered col-md-10 col-md-offset-1"><p>CryptoIndex is a dashboard
-                                            for viewing CryptoCurrency prices. It uses data from CoinMarketCap retrieved
-                                            via Web Scrapers and exposed via an API. The site is hosted on Google App
-                                            Engine.</div>
-                                    </div>
+                            <div class=row>
+                                <div class=col-sm-12>
+                                    <div class="centered col-md-10 col-md-offset-1"><p>CryptoIndex is a dashboard
+                                        for viewing CryptoCurrency prices. It uses data from CoinMarketCap retrieved
+                                        via Web Scrapers and exposed via an API. The site is hosted on Google App
+                                        Engine.</div>
                                 </div>
                             </div>
                         </div>
-                    </section>
                 </div>
             </section>
-        </section>
+    </div>
+    </section>
+    </section>
     </div>
 {% endblock %}

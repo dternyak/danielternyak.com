@@ -1,13 +1,9 @@
 from flask import Flask, render_template
 import FlaskDeferredHandler
-# from main import api
 from flask.ext.cors import CORS
 from google.appengine.api import urlfetch
-
 import logging
-
 import json
-
 import datetime
 
 app = Flask(__name__, template_folder="templates")
