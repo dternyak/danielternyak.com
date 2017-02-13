@@ -12,6 +12,7 @@ CORS(app)
 
 
 @app.route('/blog', methods=['GET'])
+@app.route('/blog/', methods=['GET'])
 def blog():
     list_to_return = []
     author = 'dternyak'
@@ -70,6 +71,7 @@ def totally_home():
 
 
 @app.route('/portfolio', methods=['GET'])
+@app.route('/portfolio/', methods=['GET'])
 def portfolio():
     return render_template('portfolio.html')
 
