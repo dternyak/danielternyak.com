@@ -60,7 +60,7 @@ def blog():
                     additional_posts = url
                 else:
                     additional_posts = False
-                print url
+
                 return render_template('blog.html', posts=list_to_return,
                                        additional={
                                            "additional": bool(additional_posts),
