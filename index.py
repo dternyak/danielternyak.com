@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, request
 import FlaskDeferredHandler
 from flask.ext.cors import CORS
 from google.appengine.api import urlfetch
@@ -15,8 +15,6 @@ CORS(app)
 
 @app.before_request
 def clear_trailing():
-    from flask import redirect, request
-
     rp = request.path
     if rp != '/' and rp.endswith('/'):
         return redirect(rp[:-1])
