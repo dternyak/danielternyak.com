@@ -1,10 +1,11 @@
-from flask import Flask, render_template, redirect, request
-import FlaskDeferredHandler
-from flask.ext.cors import CORS
-from google.appengine.api import urlfetch
-import logging
-import json
 import datetime
+import json
+import logging
+from google.appengine.api import urlfetch
+
+import FlaskDeferredHandler
+from flask import Flask, render_template, jsonify, redirect, request
+from flask.ext.cors import CORS
 
 app = Flask(__name__, template_folder="templates")
 app.url_map.strict_slashes = False
