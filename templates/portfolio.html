@@ -5,25 +5,26 @@
         <h1 class="title has-text-centered">Portfolio</h1>
         <hr/>
         <div class="columns">
-            <div class="column is-full has-text-centered">
-                {% for item in portfolio %}
-                    <div class="column is-full">
-                        <div class="column is-half is-offset-one-quarter">
-                            <h1 style="font-size: 1.5em">
-                                <a href={{ item.link }} target="_blank">
-                                    <b>{{ item.title }}</b>
-                                </a>
-                            </h1>
-                            <br/>
-                            <img src={{ item.image }}>
+            <div class="column is-full">
+                <div class="container">
+                    {% for item in portfolio %}
+                        <div class="columns is-full padding50">
+                            <div class="column is-half">
+                                <img src={{ item.image }}>
+                            </div>
+                            <div class="column">
+                                <h1 style="font-size: 1.5em">
+                                    <a href={{ item.link }} target="_blank">
+                                        <b>{{ item.title }}</b>
+                                    </a>
+                                </h1>
+                                <p>{{ item.description }}
+                                </p>
+                            </div>
                         </div>
-                        <div class="column is-half is-offset-one-quarter">
-                            <p>{{ item.description }}
-                            </p>
-                        </div>
-                    </div>
-                    <hr/>
-                {% endfor %}
+                        <hr/>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
