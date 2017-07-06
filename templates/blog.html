@@ -1,46 +1,43 @@
 {% extends 'base.html' %}
 {% block body %}
-    <div id="root">
-        <section data-reactroot="">
-            {% include 'navbar.html' %}
-            <section>
-                <div>
-                    <div class="container">
-                        <div class="container centered"><h2><b>Blog Posts</b></h2></div>
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                                <div class="post-preview">
-                                    {% for item in posts %}
-                                        <div>
 
-                                            <a style="color: #4582ec" href="{{ item.fullLink }}"
-                                               target="_blank"><h2 class="post-title">{{ item.title }}</h2></a>
-                                            {% if item.subtitle %}
-                                                <p style="margin-top: -15px">{{ item.subtitle }}</p>
-                                            {% endif %}
-                                            <p class="post-meta">
-                                                Posted by
-                                                {{ item.author }}
-                                                on
-                                                {{ item.updatedAt }}
-                                            </p>
-                                            {% if not loop.last %}
-                                                <hr>
-                                            {% endif %}
-                                        </div>
-                                    {% endfor %}
-                                    {% if additional.additional %}
-                                        <h3 style="margin-bottom: 50px">View the rest at <a href="{{ additional.link }}"
-                                                                                            target="_blank">Medium.com</a>
-                                        </h3>
-                                    {% endif %}
-                                </div>
-
+    <div class="has-text-centered">
+        <h1 class="title">Blog Posts</h1>
+        <hr/>
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                {% for item in posts %}
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="content">
+                                <a href="{{ item.fullLink }}" target="_blank">
+                                    <b>{{ item.title }}</b>
+                                </a>
+                                {% if item.subtitle %}
+                                    <p>{{ item.subtitle }}</p>
+                                {% endif %}
+                                <hr/>
+                                <small>
+                                    Posted by
+                                    {{ item.author }}
+                                    on
+                                    {{ item.updatedAt }}
+                                </small>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </section>
+                    <br/>
+                {% endfor %}
+                {% if additional.additional %}
+                    <h3 style="margin-bottom: 50px">View the rest at
+                        <a href="{{ additional.link }}"
+                           target="_blank">
+                            Medium.com
+                        </a>
+                    </h3>
+                {% endif %}
+            </div>
+        </div>
     </div>
+
 {% endblock %}

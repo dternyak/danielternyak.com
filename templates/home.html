@@ -1,34 +1,46 @@
 {% extends "base.html" %}
 {% block body %}
-    <div id=root>
-        <section data-reactroot="">{% include 'navbar.html' %}
-            <section>
-                <div id=h>
-                    <div class="centered container">
-                        <div class=row>
-                            <div class="col-md-8 col-md-offset-2 pullUp">
-                                <h1>You've reached the blog for <b>Daniel Ternyak</b>.<br>I
-                                    create web applications with<b> Python</b> and <b>JavaScript</b> on the
-                                    <b>Cloud.</b>
-                                </h1>
-                            </div>
-
-                        </div>
-
-                        <div class="row mt" style="margin-top: 120px;">
-
-                            <div class=col-sm-4><i class=ion-monitor></i><a href=/portfolio><h3><b>Portfolio</b></h3>
-                            </a></div>
-                            <div class=col-sm-4><i class=ion-ios-bookmarks-outline></i><a href=/blog><h3><b>Blog</b>
-                            </h3></a></div>
-                            <div class=col-sm-4><i class=ion-ios-paper-outline></i><a
-                                    href="https://drive.google.com/open?id=0B3hYpsXRDCIkdXBpbEEzbGQ3ekk"
-                                    target=_blank><h3><b>Rèsumè</b></h3></a></div>
-                        </div>
-
+    <section class="hero is-large has-text-centered">
+        <!-- Hero header: will stick at the top -->
+        <div class="hero-body">
+            <!-- Hero content: will be in the middle -->
+            <div class="columns">
+                <div class="column is-half">
+                    <div>
+                        <h1 class="title">
+                            You've reached the blog for <b>Daniel Ternyak</b>.
+                        </h1>
+                        <h2 class="subtitle">
+                            I
+                            create web applications with<b> Python</b> and <b>JavaScript</b> on the
+                            <b>Cloud.</b>
+                        </h2>
                     </div>
                 </div>
-            </section>
-        </section>
-    </div>
+
+                <div class="column is-half">
+                    <div class="columns">
+                        <div class="column">
+                            <i class="ion-monitor" style="font-size: 30px"></i>
+                            <a href="/portfolio">
+                                <h3><b>Portfolio</b></h3>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <i class="ion-ios-bookmarks-outline" style="font-size: 30px"></i>
+                            <a href="/blog">
+                                <h3><b>Blog</b></h3>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <i class="ion-ios-paper-outline" style="font-size: 30px"></i>
+                            <a href="https://drive.google.com/open?id=0B3hYpsXRDCIkdXBpbEEzbGQ3ekk"
+                               target=_blank>
+                                <h3><b>Rèsumè</b></h3></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
