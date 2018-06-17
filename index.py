@@ -27,7 +27,7 @@ def clear_trailing():
     if rp != '/' and rp.endswith('/'):
         return redirect(rp[:-1])
 
-
+@app.route('/', methods=['GET'])
 @app.route('/blog', methods=['GET'])
 def blog():
     list_to_return = []
@@ -44,11 +44,14 @@ def blog():
             else:
                 posts = references["Post"]
                 for key, value in posts.iteritems():
+                    # print value
+                    # print ""
                     title = value["title"].encode('ascii', 'ignore')
-                    updated_at = value["updatedAt"]
+                    updated_at = value["firstPublishedAt"]
                     updated_at_proper = datetime.datetime.fromtimestamp(updated_at / 1000.0).strftime(
                         '%Y-%m-%d %H:%M:%S')
                     content = value["content"]
+                    firstPublishedAt = value["firstPublishedAt"]
                     subtitle = None
                     if content:
                         if 'subtitle' in content:
@@ -60,9 +63,10 @@ def blog():
                         "title": title,
                         "updatedAt": updated_at_proper,
                         "subtitle": subtitle,
-                        "fullLink": full_link
+                        "fullLink": full_link,
+                        "firstPublishedAt": firstPublishedAt
                     })
-                list_to_return.sort(key=lambda e: e['updatedAt'], reverse=True)
+                list_to_return.sort(key=lambda e: e['firstPublishedAt'], reverse=True)
                 additional_posts = len(list_to_return) < (json_result['payload']['userMeta']["numberOfPostsPublished"])
                 if additional_posts:
                     additional_posts = url
@@ -81,9 +85,9 @@ def blog():
         logging.exception('Caught exception fetching url')
 
 
-@app.route('/', methods=['GET'])
-def totally_home():
-    return render_template('home.html')
+# @app.route('/', methods=['GET'])
+# def totally_home():
+#     return render_template('home.html')
 
 
 @app.route('/portfolio', methods=['GET'])

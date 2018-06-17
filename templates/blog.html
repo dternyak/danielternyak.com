@@ -1,44 +1,15 @@
 {% extends 'base.html' %}
 {% block body %}
+    {% for item in posts %}
+        <p>
+            <span class="margin left">{{ item.updatedAt[:10] }}</span>
+            <a href="{{ item.fullLink }}" target="_blank"><b>{{ item.title }}</b></a>
+            {% if item.subtitle %}
+                <br/>
+                <small>{{ item.subtitle }}</small>
+            {% endif %}
+        </p>
 
-    <div class="has-text-centered">
-    <br/>
-        <h1 class="title">Blog Posts</h1>
-        <hr/>
-        <div class="columns">
-            <div class="column is-half is-offset-one-quarter">
-                {% for item in posts %}
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="content">
-                                <a href="{{ item.fullLink }}" target="_blank">
-                                    <b>{{ item.title }}</b>
-                                </a>
-                                {% if item.subtitle %}
-                                    <p>{{ item.subtitle }}</p>
-                                {% endif %}
-                                <hr/>
-                                <small>
-                                    Posted by
-                                    {{ item.author }}
-                                    on
-                                    {{ item.updatedAt }}
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                {% endfor %}
-                {% if additional.additional %}
-                    <h3 style="margin-bottom: 50px">View the rest at
-                        <a href="{{ additional.link }}"
-                           target="_blank">
-                            Medium.com
-                        </a>
-                    </h3>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-
+        <br/>
+    {% endfor %}
 {% endblock %}
