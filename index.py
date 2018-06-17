@@ -102,7 +102,7 @@ def portfolio():
                         Front-End
                         packaged with Material UI.
                         While I am the official maintainer and original creator,
-                        React-Redux-Flask has 8 contributors, and over 1000 public forks."""
+                        React-Redux-Flask has 8 contributors, and over 200 public forks."""
             )
         },
         {
