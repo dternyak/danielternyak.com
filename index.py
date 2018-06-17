@@ -89,7 +89,7 @@ def blog():
 # def totally_home():
 #     return render_template('home.html')
 
-
+@app.route('/projects', methods=['GET'])
 @app.route('/portfolio', methods=['GET'])
 def portfolio():
     portfolio_items = [
@@ -148,7 +148,7 @@ def portfolio():
         }
     ]
 
-    return render_template('portfolio.html', portfolio=portfolio_items)
+    return render_template('projects.html', portfolio=portfolio_items)
 
 
 @app.errorhandler(404)
