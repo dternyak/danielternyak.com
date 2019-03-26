@@ -1,15 +1,17 @@
 {% extends 'base.html' %}
 {% block body %}
-    {% for item in posts %}
-        <p>
-            <span class="margin left">{{ item.updatedAt[:10] }}</span>
-            <a href="{{ item.fullLink }}" target="_blank"><b>{{ item.title }}</b></a>
-            {% if item.subtitle %}
-                <br/>
-                <small>{{ item.subtitle }}</small>
-            {% endif %}
-        </p>
+    <h1>Articles</h1>
 
-        <br/>
+    {% for item in posts %}
+        <div style="margin-bottom: 3em;">
+
+            <h3 style="margin-bottom: 0.5em"><a href="{{ item.fullLink }}" target="_blank">{{ item.title }}</a></h3>
+            {% if item.subtitle %}
+                <div>
+                    <small>{{ item.subtitle }}</small>
+                </div>
+            {% endif %}
+            </p>
+        </div>
     {% endfor %}
 {% endblock %}

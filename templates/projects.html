@@ -1,29 +1,20 @@
 {% extends 'base.html' %}
 {% block body %}
     <div>
-
         <h1>Projects</h1>
-        <br/>
-
-        <div class="columns">
-            <div class="column is-full">
-                {% for item in portfolio %}
-                    <h1 style="font-size: 1.5em">
-                        <a href={{ item.link }} target="_blank">
-                            <b>{{ item.title }}</b>
-                        </a>
-                    </h1>
-                    <img src={{ item.image }}>
-                    <br/>
-                    <br/>
-                    <small>
-                        {{ item.description }}
-                    </small>
-                    <br/>
-                    <br/>
-                    <br/>
-                {% endfor %}
+        {% for item in portfolio %}
+            <div style="margin-bottom: 4em">
+                <h3>
+                    <a href={{ item.link }} target="_blank">
+                        {{ item.title }}
+                    </a>
+                </h3>
+                <a href={{ item.link }} target="_blank"><img src={{ item.image }}></a>
+                <small>
+                    {{ item.description }}
+                </small>
             </div>
-        </div>
+        {% endfor %}
+    </div>
     </div>
 {% endblock %}
