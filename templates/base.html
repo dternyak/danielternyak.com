@@ -2,7 +2,8 @@
 <head>
     <meta charset="utf-8">
     <title>Daniel Ternyak</title>
-    <meta name="description" content="">
+    <meta name="description"
+          content="Hey, I'm Daniel Ternyak. Software developer, biker, and <insert additional description of identity>.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
@@ -16,15 +17,37 @@
         h1 {
             margin-bottom: 2em;
             font-size: 2em;
+            font-weight: 200;
+        }
+
+        h3 {
+            font-weight: 200;
+
         }
 
         .menu {
             float: right;
-
         }
 
         .menu a {
-            margin-left: 2em
+            display: inline-block;
+            margin-left: 2em;
+            color: #55acee;
+            border-bottom: none;
+        }
+
+        .menu a:hover {
+            transform: translateY(-3px);
+            border-bottom: #55acee;
+            background: white;
+            color: #55acee;
+            border-bottom: 2px solid #55acee;
+
+        }
+
+        .logo {
+            font-weight: 900;
+            border-bottom: none;
         }
 
         body {
@@ -47,22 +70,21 @@
             margin-top: 2em;
         }
 
-
         img {
             max-width: 100%;
             margin-bottom: 1em;
         }
 
         a {
-            color: #55acee;
+            color: black;
             text-decoration: none;
+            border-bottom: 2px solid #55acee;
         }
 
         a:hover {
-            background: #00f;
+            background: #55acee;
             color: #fff
         }
-
 
         @media screen and (max-width: 1200px) {
             .container {
@@ -76,25 +98,23 @@
 
         @media screen and (max-width: 1000px) {
             .container {
-                margin-left: 100px
+                margin-left: 60px
             }
 
-
             .navbar {
-                margin-left: 100px;
+                margin-left: 60px;
             }
         }
 
         @media screen and (max-width: 800px) {
             .container {
-                margin-left: 80px
+                margin-left: 1em;
             }
 
             .navbar {
-                margin-left: 80px;
+                margin-left: 1em;
             }
         }
-
 
         @media screen and (max-width: 600px) {
             body {
@@ -121,14 +141,9 @@
 
             .menu a {
                 margin: 0 1em 0 0;
-                color: #ababab
             }
         }
-
-
     </style>
-
-
 </head>
 
 <body>
@@ -157,6 +172,5 @@
 
     ga('create', 'UA-50598274-6', 'auto');
     ga('send', 'pageview');
-
 </script>
 </html>
