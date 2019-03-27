@@ -11,11 +11,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-
     <style>
-
-
         footer {
             padding: 50px
         }
@@ -41,15 +37,20 @@
             margin: 2em 4em 0 222px
         }
 
-
         .article {
             margin-bottom: 1em
         }
 
-
-
         .project {
             margin-bottom: 3em
+        }
+
+        .project h3 {
+            margin-top: 0em;
+        }
+
+        .project h3 {
+            font-size: 1.5em;
         }
 
         .navbar-wrapper {
@@ -61,7 +62,6 @@
             padding-left: 222px;
             padding-top: 0.4em;
         }
-
 
         .navbar {
             background-color: white;
@@ -78,7 +78,6 @@
             font-weight: 300;
             margin-bottom: 1em;
         }
-
 
         img {
             max-width: 100%;
@@ -123,7 +122,6 @@
             margin-right: 5px;
             border-bottom: none;
         }
-
 
         .icons i:hover {
             transform: scale(1.3);
@@ -172,7 +170,9 @@
                 padding-left: 1em;
             }
 
-
+            .me {
+                visibility: hidden;
+            }
         }
 
         @media screen and (max-width: 600px) {
@@ -211,8 +211,14 @@
             .icons {
                 display: inline-block
             }
+        }
 
-
+        .me {
+            position: fixed;
+            height: 500px;
+            bottom: 0px;
+            right: 0px;
+            margin-bottom: 0
         }
 
 
@@ -226,11 +232,15 @@
     </div>
 </div>
 
-
+<span>
 <div class="container">
     {% block body %}
     {% endblock %}
 </div>
+
+    <img src="assets/IMG_3541-removebg-hd.png" class="me"/>
+</span>
+
 </body>
 <script>
     (function (i, s, o, g, r, a, m) {

@@ -4,14 +4,14 @@
         <h1>Projects</h1>
         {% for item in portfolio %}
             <div class="project">
+                <a href={{ item.link }} target="_blank">
+                    <img src={{ item.image }}>
+                </a>
                 <h3>
                     <a href={{ item.link }} target="_blank">
                         {{ item.title }}
                     </a>
                 </h3>
-                <a href={{ item.link }} target="_blank">
-                    <img src={{ item.image }}>
-                </a>
                 <small>
                     {{ item.description }}
                 </small>
