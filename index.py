@@ -30,7 +30,17 @@ def clear_trailing():
 
 
 @app.route('/', methods=['GET'])
-@app.route('/blog', methods=['GET'])
+@app.route('/', methods=['GET'])
+def about():
+    return render_template('about.html')
+
+
+@app.route('/photos', methods=['GET'])
+def photos():
+    return render_template('photos.html')
+
+
+@app.route('/articles', methods=['GET'])
 def blog():
     list_to_return = []
     author = 'dternyak'
