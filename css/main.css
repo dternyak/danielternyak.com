@@ -1,0 +1,85 @@
+.container-main {
+    text-align: left;
+    padding: 0 30px;
+}
+
+@media (min-width: 768px) {
+    .container-main {
+        float: left;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 45%;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+.name {
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-bottom: 0.5em;
+    color: #2F231F
+}
+
+.description {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.main-intro {
+    margin-top: 50px;
+}
+
+.intro-text {
+    font-size: 2.2em;
+}
+
+.intro-text a {
+    padding: 0 4px 2px 4px;
+    border-bottom: 2px solid #2F231F;
+    text-decoration: none;
+    word-wrap: break-word;
+    white-space: initial;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.intro-text a:hover {
+    background-color: #D1D1D3;
+}
+
+@media (min-width: 768px) {
+    .main-main {
+        margin-bottom: 50px;
+    }
+}
+
+.intro a {
+    padding: 0 4px 2px 4px;
+    border-bottom: 2px solid #8C7059;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.intro a:hover {
+    background-color: #D1D1D3;
+    border-color: #725849;
+}
+
+.date {
+    color: #D1D1D3;
+    float: right;
+}
+
+@media (max-width: 1400px) {
+    .date {
+        display: none;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container-main {
+        padding: 0 15px 30px 15px;
+    }
+}

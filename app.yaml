@@ -19,8 +19,8 @@ handlers:
   script: index.app
   secure: always
 
-- url: /dist
-  static_dir: static/dist
+- url: /css
+  static_dir: css
   secure: always
 
 - url: /assets
