@@ -1,6 +1,10 @@
 .container-main {
     text-align: left;
     padding: 0 30px;
+        animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
 }
 
 @media (min-width: 768px) {
