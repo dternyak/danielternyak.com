@@ -4,7 +4,7 @@
     flex-direction: column-reverse;
   }
 
-    .me {
+  .me {
     width: 30%;
   }
 
@@ -13,3 +13,10 @@
   }
 }
 
+@media screen and (max-width: $md) {
+
+
+  .me {
+    width: 50%;
+  }
+}
