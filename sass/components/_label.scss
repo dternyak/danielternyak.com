@@ -1,0 +1,26 @@
+.label.label-cyan {
+  background-color: #28998a;
+}
+
+.label.label-grey {
+  background-color: #858589;
+}
+
+.label.label-pink {
+  background-color: #c47ca2;
+}
+
+.label {
+  display: inline-block;
+  padding: .4rem 1rem;
+  border-radius: .4rem;
+  background-color: #1991eb;
+}
+
+.label-text {
+  color: #2D2A26;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 2rem;
+  font-size: 1.4rem
+}
