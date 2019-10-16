@@ -100,8 +100,7 @@ a {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  align-items: center;
-  margin-top: 5rem; }
+  align-items: center; }
 
 .about-me {
   padding-right: 7rem; }
@@ -178,7 +177,9 @@ a {
   .header .grid {
     flex-direction: column-reverse; }
   .me {
-    width: 30%; } }
+    width: 30%; }
+  .intro {
+    margin-top: 5rem; } }
 
 .container {
   margin: 0 auto;
