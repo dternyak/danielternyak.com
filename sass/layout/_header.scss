@@ -1,4 +1,11 @@
-.header {
+@media screen and (max-width: $lg) {
 
+  .header .grid {
+    flex-direction: column-reverse;
+  }
+
+    .me {
+    width: 30%;
+  }
 }
 

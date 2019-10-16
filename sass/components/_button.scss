@@ -6,12 +6,21 @@
   float: none;
   border-radius: 4px;
   background-color: #1991eb;
-  -webkit-transition: color 200ms ease, box-shadow 200ms ease, background-color 200ms ease, -webkit-transform 400ms ease;
   transition: color 200ms ease, box-shadow 200ms ease, background-color 200ms ease, -webkit-transform 400ms ease;
-  transition: color 200ms ease, box-shadow 200ms ease, background-color 200ms ease, transform 400ms ease;
-  transition: color 200ms ease, box-shadow 200ms ease, background-color 200ms ease, transform 400ms ease, -webkit-transform 400ms ease;
   color: #fff;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-big:hover {
+  border-color: #0c6eb8;
+  background-color: #1386dd;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transform: translate(0px, -2px);
+  -ms-transform: translate(0px, -2px);
+  transform: translate(0px, -2px);
+  color: #fff;
 }

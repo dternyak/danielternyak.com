@@ -1,0 +1,34 @@
+.articles-wrapper {
+  margin: 1rem 0;
+
+}
+
+
+.articles-wrapper {
+
+  @media screen and (max-width: $md) {
+
+    .column {
+      &:not(:first-child) {
+        margin-top: 5rem;
+      }
+    }
+  }
+
+}
+
+
+.article-cover.article-image {
+  background-image: url(/img/card-cover.jpg);
+  object-fit: cover;
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, .1);
+
+}
+
+.article-cover {
+  width: 100%;
+  height: 270px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+

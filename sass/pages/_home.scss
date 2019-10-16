@@ -4,6 +4,7 @@
   justify-content: center;
   height: 100%;
   align-items: center;
+  margin-top: 5rem;
 }
 
 .about-me {
@@ -37,6 +38,9 @@
   margin: 0 auto;
 }
 
+.contact {
+  margin-left: 1rem;
+}
 
 .footer {
   padding-bottom: 10rem;
@@ -46,14 +50,22 @@
   display: flex;
 }
 
-.article-cover.article-image {
-  background-image: url(/img/card-cover.jpg);
-  object-fit: cover;
+.contact-me {
+  display: inline-block;
+  margin-top: 2rem;
+      font-size: 2rem;
+  box-shadow: none;
+
+  &:hover {
+    box-shadow: none;
+  }
+
 }
 
-.article-cover {
-  width: 100%;
-  height: 270px;
-  margin-bottom: 20px;
-  border-radius: 8px;
+@media (max-width: $md) {
+
+  .contact-me {
+    margin-top: 3.5rem;
+    font-size: 2.5rem;
+  }
 }
