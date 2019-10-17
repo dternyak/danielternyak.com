@@ -173,7 +173,7 @@ a {
   .grid {
     flex-direction: column; } }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 952px) {
   .header .grid {
     flex-direction: column-reverse; }
   .me {
