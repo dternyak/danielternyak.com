@@ -15,8 +15,10 @@ body {
   color: #333;
   background-color: white;
   line-height: 3rem;
-  font-size: 1.6rem;
-  margin-top: 5rem; }
+  font-size: 1.6rem; }
+  @media screen and (min-width: 768px) {
+    body {
+      margin-top: 5rem; } }
 
 p {
   line-height: 2.5rem; }
