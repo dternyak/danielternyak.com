@@ -113,7 +113,7 @@ a {
 .about-me {
   padding-right: 7rem; }
 
-.me-img {
+.me {
   border-radius: 50%; }
 
 .travels {
@@ -192,6 +192,18 @@ a {
 @media screen and (max-width: 768px) {
   .me {
     width: 50%; } }
+
+@media screen and (min-width: 768px) {
+  .me-img-wrapper {
+    position: relative;
+    height: 0;
+    padding-top: 100%; }
+  .me {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto; } }
 
 .container {
   margin: 0 auto;
